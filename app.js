@@ -19,10 +19,10 @@ function displayTime() {
   if (hrs == 0) {
     hrs = 12;
   }
-  
-  hrs(hrs < 10) ? "0" + hrs : hrs;
-  min(min < 10) ? "0" + min : min;
-  hrs(sec < 10) ? "0" + sec : sec;
+
+  hrs = (hrs < 10) ? "0" + hrs : hrs;
+  min = (min < 10) ? "0" + min : min;
+  sec = (sec < 10) ? "0" + sec : sec;
 
   document.getElementById('hours').innerHTML = hrs;
   document.getElementById('minutes').innerHTML = min;
